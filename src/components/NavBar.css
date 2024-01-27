@@ -1,0 +1,62 @@
+ul{
+    float:left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    margin-right: 0px;
+    display: inline-block;
+    font-weight: bold;
+}
+li:not(:last-child) {
+    margin-right: 35px; /* Add space between list items except the last one */
+  }
+nav{
+    background-color: rgb(217,185,155);
+    display:flex;
+    margin: 0;
+    padding:15px;
+    width: 100vw;
+    justify-content: center;
+    border-bottom-style: solid;
+    position: fixed;
+}
+
+#iconTabs{
+    margin-left:80%;
+}
+
+#mainTabs{
+    position:absolute;
+}
+
+img{
+    width:24px;
+    height:24px;
+}
+
+.iconList:not(:last-child){
+    margin-right:20px;
+}
+
+button{
+    transition: 0.4s;
+    color: rgb(18,18,19);
+    background-color: rgba(0,0,0,0);
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+}
+
+#name{
+    font-weight:bolder;
+    position: relative;
+    right: 2.5%;
+    cursor: default;
+}
