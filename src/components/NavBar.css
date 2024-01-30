@@ -13,6 +13,7 @@ li:not(:last-child) {
     margin-right: 35px; /* Add space between list items except the last one */
   }
 nav{
+    z-index: 2;
     background-color: rgb(217,185,155);
     display:flex;
     margin: 0;
@@ -48,10 +49,28 @@ button{
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 button:hover{
     color: white;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color:  rgba(255,240,219,0.8);
+    bottom: 0;
+    left: 5%;
+    transition: width 0.3s ease;
+  }
+
+button:hover::before {
+    width: 90%;
 }
 
 #name{
@@ -60,3 +79,6 @@ button:hover{
     right: 2.5%;
     cursor: default;
 }
+
+
+

@@ -11,22 +11,22 @@
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: myFont;
+  src: url('/src/fonts/Honey\ Jelly.otf');
+}
 
 body {
+  font-family: myFont, Arial, Helvetica, sans-serif;
   margin: 0;
   display: flex;
 }
+button{
+  font-family: myFont, Arial, Helvetica, sans-serif;
+}
 
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.container{
+  margin:0;
+  margin-top:3.5rem;
+  width:100vw;
 }
